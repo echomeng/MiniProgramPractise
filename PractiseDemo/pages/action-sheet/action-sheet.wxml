@@ -1,0 +1,21 @@
+<!--pages/action-sheet/action-sheet.wxml-->
+<view class='action-list'>
+  <view class='action-listheader'>
+    <image class='action-listlogo' src='/images/logo.png'></image>
+    <view class='action-listInfo'>这是一个测试小程序，尝试一下微信提供的各种组件，当然主要是想在不被烦死的前提下，熟悉一下前端的开发模式.</view>
+  </view>
+  <view class='index-bd'>
+    <view class='list'>
+      <view class='action-item'>
+        <block wx:for-items="{{list}}" wx:key="{{item.id}}">
+          <view class='kind-list-item'>
+            <view id='{{item.id}}' class='kind-list-item-hd' bindtap='kindToggle'>
+              <view class='kind-list-text'>{{item.name}}</view>
+              <image class='kind-list-img' src='../../images/{{item.id}}.png'></image>
+            </view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </view>
+</view>

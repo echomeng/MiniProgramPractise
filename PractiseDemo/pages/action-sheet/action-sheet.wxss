@@ -1,0 +1,37 @@
+/* pages/action-sheet/action-sheet.wxss */
+.action-listheader {
+  padding: 80rpx;
+  text-align: center;
+}
+.action-listlogo {
+  width: 86rpx;
+  height: 86rpx;
+}
+.action-listInfo {
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #888888;
+}
+.index-bd {
+  padding: 0 30rpx 40rpx;
+}
+
+.kind-list-item {
+  background-color: white;
+  margin: 20rpx 0;
+  border-radius: 4rpx;
+  overflow: hidden;
+}
+.kind-list-item-hd {
+  padding: 30rpx;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.3s  
+}
+.kind-list-text {
+  flex: 1;
+}
+.kind-list-img {
+  width: 60rpx;
+  height: 60rpx;
+}
