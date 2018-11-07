@@ -58,6 +58,18 @@ Page({
   },
   kindToggle(e) {
     console.log('click cell')
+    const id = e.currentTarget.id
+    const list = this.data.list
+    for(let i = 0; i < list.length; i++) {
+      if(list[i].id === id) {
+        list[i].open =! list[i].open
+      } else {
+        list[i].open = false;
+      }
+    }
+    this.setData ({
+      list
+    })
   },
   /**
    * 用户点击右上角分享

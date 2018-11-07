@@ -1,37 +1,99 @@
-/* pages/action-sheet/action-sheet.wxss */
-.action-listheader {
-  padding: 80rpx;
+.index-head {
   text-align: center;
+  padding: 80rpx;
 }
-.action-listlogo {
+.index-logo {
   width: 86rpx;
   height: 86rpx;
 }
-.action-listInfo {
-  margin-top: 20rpx;
-  font-size: 28rpx;
+.index-description {
   color: #888888;
-}
-.index-bd {
-  padding: 0 30rpx 40rpx;
+  font-size: 28rpx;
+  margin-top: 20rpx;
 }
 
+.index-body {
+  padding: 0 30rpx 40rpx;
+}
+.kind-list {
+
+}
 .kind-list-item {
   background-color: white;
   margin: 20rpx 0;
-  border-radius: 4rpx;
-  overflow: hidden;
+  border-radius: 24rpx;
 }
-.kind-list-item-hd {
+.kind-list-item-head {
+  align-items: center;
   padding: 30rpx;
   display: flex;
-  align-items: center;
-  transition: opacity 0.3s  
 }
-.kind-list-text {
+.kind-list-item-head-open {
+  opacity: 0.2;
+}
+.kind-list-item-head-description {
   flex: 1;
 }
-.kind-list-img {
+.kind-list-item-head-image {
   width: 60rpx;
   height: 60rpx;
+}
+.kind-list-item-body {
+  height: 0;
+  overflow: hidden;
+}
+.kind-list-item-body-show {
+  height: auto;
+}
+.navigator-box {
+  opacity: 0;
+  font-size: 34rpx;
+  position: relative;
+
+  transform: translateY(-50%);
+  transition: 0.3s;
+}
+.navigator-box-show {
+  opacity: 1;
+  transform: translateY(0);
+}
+.navigator {
+  padding: 20rpx 30rpx;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+.navigator:before {
+  content: " ";
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  right: 30rpx;
+  height: 1px;
+  border-top: 1rpx solid #D8D8D8;
+  color: #D8D8D8;
+}
+.navigator:first-child:before {
+  display: none;
+}
+.navigator-text {
+  flex: 1;
+}
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
 }
