@@ -1,4 +1,4 @@
-// hhh.js
+// pages/scroll-view/scroll-view.js
 Page({
 
   /**

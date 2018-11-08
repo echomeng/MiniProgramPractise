@@ -1,7 +1,10 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/action-sheet/action-sheet"
+    "pages/action-sheet/action-sheet",
+    "pages/swiper/swiper",
+    "pages/scroll-view/scroll-view",
+    "pages/views/views"
   ],
   "window": {
     "backgroundTextStyle": "light",
