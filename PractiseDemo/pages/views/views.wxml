@@ -1,20 +1,20 @@
 <!--pages/views/views.wxml-->
-<view class='container'>
-  <view class='section'>
-    <view class='section-header'>
-      <text class='section-title'>横向布局 \n flex direction: row</text>
+<view class='page-body'>
+  <view class='page-section'>
+    <view class='page-section-header'>
+      <text class='page-section-title'>横向布局 \n flex direction: row</text>
     </view>
-    <view class='section-body' style='flex-direction:row;'>
+    <view class='page-section-body' style='flex-direction:row;'>
       <view class='flex-item row1'></view>
       <view class='flex-item row2'></view>
       <view class='flex-item row3'></view>
     </view>
   </view>
-  <view class='section'>
-    <view class='section-header'>
-      <text class='section-title'>纵向布局 \n flex direction: line</text>
+  <view class='page-section'>
+    <view class='page-section-header'>
+      <text class='page-section-title'>纵向布局 \n flex direction: line</text>
     </view>
-    <view class='section-body' style='flex-direction:column;'>
+    <view class='page-section-body' style='flex-direction:column;'>
       <view class='flex-item column1'></view>
       <view class='flex-item column2'></view>
       <view class='flex-item column3'></view>

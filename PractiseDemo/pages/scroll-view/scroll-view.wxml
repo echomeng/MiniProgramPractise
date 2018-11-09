@@ -1,2 +1,31 @@
 <!--pages/scroll-view/scroll-view.wxml-->
-<text>pages/scroll-view/scroll-view.wxml</text>
+<view class='page-body'>
+  <view class='page-section'>
+    <view class='page-section-header'>
+      <text class='page-section-title'>横向滚动</text>
+    </view>
+    <view class='page-section-body'>
+      <view class='scrollview-box'>
+        <scroll-view style='height: 300rpx;' scroll-y="true">
+          <view class='scrollview-item demo-text-1'></view>
+          <view class='scrollview-item demo-text-2'></view>
+          <view class='scrollview-item demo-text-3'></view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+  <view class='page-section'>
+    <view class='page-section-header'>
+      <text class='page-section-title'>纵向滚动</text>
+    </view>
+    <view class='page-section-body'>
+      <view class='scrollview-box'>
+        <scroll-view style='width: 100%;' scroll-x="true" class='scrollview-H'>
+          <view class='scrollview-item-H demo-text-1'></view>
+          <view class='scrollview-item-H demo-text-2'></view>
+          <view class='scrollview-item-H demo-text-3'></view>
+        </scroll-view>
+      </view>
+    </view>
+  </view>
+</view>
