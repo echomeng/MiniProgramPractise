@@ -41,7 +41,7 @@
 				{
 					"id": 0,
 					"name": "views单页面编译",
-					"pathName": "pages/scroll-view/scroll-view",
+					"pathName": "pages/swiper/swiper",
 					"query": ""
 				}
 			]

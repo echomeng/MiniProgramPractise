@@ -1,1 +1,20 @@
 /* pages/swiper/swiper.wxss */
+@import "../components/common-ui.wxss";
+
+.swip-item {
+  height: 350rpx;
+  display: block;
+}
+.page-section-title {
+  margin-top: 60rpx;
+  position: relative;
+  font-size: 30rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+}
+.info {
+  position: absolute;
+  font-size: 30rpx;
+  color: #353535;
+  right: 30rpx;
+}

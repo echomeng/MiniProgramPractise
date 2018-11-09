@@ -1,5 +1,5 @@
 <!--pages/views/views.wxml-->
-<view class='page-body'>
+<view class='page-body' style='padding: 30rpx;'>
   <view class='page-section'>
     <view class='page-section-header'>
       <text class='page-section-title'>横向布局 \n flex direction: row</text>

@@ -1,2 +1,41 @@
 <!--pages/swiper/swiper.wxml-->
-<text>pages/swiper/swiper.wxml</text>
+
+<view class='page-body'>
+  <view class='page-section' style='padding: 70rpx;'>
+    <swiper indicator-dots='{{indicatorDots}}' autoplay='{{autoPlay}}' duration='{{duration}}' interval='{{interval}}'>
+      <block wx:for="{{background}}" wx:key="*this">
+        <swiper-item>
+          <view class='swip-item {{item}}'></view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class='page-section'>
+    <view class='commonui-cells commonui-cells-aftertitle'>
+      <view class='commonui-cell common-cell-withswitch'>
+        <view class='commonui-cell-body'>指示点</view>
+        <view class='commonui-cell-foot'>
+          <switch checked='{{indicatorDots}}' bindchange='changeIndicatorDots'></switch>
+        </view>
+      </view>
+      <view class='commonui-cell common-cell-withswitch'>
+        <view class='commonui-cell-body'>自动播放</view>
+        <view class='commonui-cell-foot'>
+          <switch checked='{{autoPlay}}' bindchange='changeAutoPlayState'></switch>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='page-section page-section-spacing'>
+    <view class='page-section-title'>
+      <text>切换时长（ms）</text>
+      <text class='info'>{{duration}}</text>
+    </view>
+    <slider max='2000' min='500' value='{{duration}}' bindchange='durationChange'></slider>
+    <view class='page-section-title'>
+      <text>自动播放间隔时长（ms）</text>
+      <text class='info'>{{interval}}</text>
+    </view>
+    <slider max='4000' min='2000' value='{{interval}}' bindchange='intervalChange'></slider>
+  </view>
+</view>

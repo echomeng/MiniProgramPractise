@@ -1,5 +1,5 @@
 <!--pages/scroll-view/scroll-view.wxml-->
-<view class='page-body'>
+<view class='page-body' style='padding: 20rpx;'>
   <view class='page-section'>
     <view class='page-section-header'>
       <text class='page-section-title'>横向滚动</text>
