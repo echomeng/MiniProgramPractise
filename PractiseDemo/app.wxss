@@ -18,16 +18,16 @@ page {
   align-items: flex-start;
   padding: 0rpx;
   height: 100%;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 .page-body-button {
   margin-left: 30rpx;
   margin-right: 30rpx;
 }
 .page-section {
-  padding: 0;
+  padding: 20rpx;
   margin-top: 20rpx;
-  background-color: blue;
+  /* background-color: blue; */
 }
 .page-section-spacing {
   padding: 0 80rpx;
@@ -88,4 +88,14 @@ page {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.btn-area {
+  margin-top: 60rpx;
+  box-sizing: border-box; /* box-sizing允许以特定的方式定义匹配某个区域的特定元素。例如需要并排胖房两个带边框的框，可以通过将box-sizing设置为border-box，可以令浏览器呈现出带有指定宽度和高度的框，并把边框和内边距放进框中 */
+  width: 100%;
+  padding: 0 30rpx
+}
+button {
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
 }

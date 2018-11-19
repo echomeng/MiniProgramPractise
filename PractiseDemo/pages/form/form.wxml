@@ -1,2 +1,44 @@
 <!--pages/form/form.wxml-->
-<text>pages/form/form.wxml</text>
+<!-- form表单中formType为submit的<button/>组件点击时会讲表单组件中的value值进行提交，需要在表单组件中加上name来作为key，否则是无法生效的 -->
+<view class='page-body'>
+  <form catchsubmit="formSubmit" catchreset="formReset">
+    <view class='page-section'>
+      <view class='page-section-title'>switch</view>
+      <switch name='switch'></switch>
+    </view>
+    <view class='page-section'>
+      <view class='page-section-title'>radio</view>
+      <radio-group name='radio'>
+        <label>
+          <radio value='radio1' />选项一</label>
+        <label>
+          <radio value='radio2' />选项二</label>
+      </radio-group>
+    </view>
+    <view class='page-section'>
+      <view class='page-section-title'>checkbox</view>
+      <checkbox-group name='checkbox'>
+        <label>
+          <checkbox value='checkbox1' />选项一</label>
+        <label>
+          <checkbox value='checkbox2' />选项二</label>
+      </checkbox-group>
+    </view>
+    <view class='page-section'>
+      <view class='page-section-title'>slider</view>
+      <slider min='0' max='100' value='50' show-value name='slider'></slider>
+    </view>
+    <view class='page-section'>
+      <view class='page-section-title'>input</view>
+      <view class='commonui-cells'>
+        <view class='commonui-cell'>
+          <input class='commonui-input' name='input' placeholder='请输入内容' name='input'></input>
+        </view>
+      </view>
+    </view>
+    <view class='btn-area'>
+      <button type='primary' form-type='submit'>Submit</button>
+      <button form-type='reset'>Reset</button>
+    </view>
+  </form>
+</view>

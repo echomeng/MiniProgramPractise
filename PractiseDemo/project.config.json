@@ -41,7 +41,7 @@
 				{
 					"id": 0,
 					"name": "views单页面编译",
-					"pathName": "pages/cover-view/cover-view",
+					"pathName": "pages/form/form",
 					"query": ""
 				}
 			]

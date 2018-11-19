@@ -1,1 +1,7 @@
 /* pages/checkbox/checkbox.wxss */
+
+@import "../components/common-ui.wxss";
+
+.checkbox {
+  padding-right: 20rpx;
+}

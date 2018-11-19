@@ -1,2 +1,26 @@
 <!--pages/checkbox/checkbox.wxml-->
-<text>pages/checkbox/checkbox.wxml</text>
+<view class='page-body'>
+  <view class='page-section'>
+    <view class='page-section-title'>默认样式</view>
+    <label class='checkbox'>
+      <checkbox value='cb' checked='true'>选中</checkbox>
+    </label>
+    <label class='checkbox'>
+      <checkbox value='cb' checked='false'>未选中</checkbox>
+    </label>
+  </view>
+
+  <view class='page-section'>
+    <view class='page-section-title'>推荐样式展示</view>
+    <view class='commonui-cells'>
+      <checkbox-group bindchange='checkboxChange'>
+        <label class='commonui-cell' wx:for='{{items}}' wx:key='{{item.value}}'>
+          <view class='commonui-cell'>
+            <checkbox value='{{item.value}}' checked='{{item.checked}}'></checkbox>
+          </view>
+          <view class='commonui-cell-body'>{{item.name}}</view>
+        </label>
+      </checkbox-group>
+    </view>
+  </view>
+</view>

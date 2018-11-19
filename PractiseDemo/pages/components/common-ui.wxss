@@ -54,3 +54,8 @@
   text-align: right;
   color: #999999;
 }
+.commonui-input {
+  height: 2.6em;
+  min-height: 2.6em;
+  line-height: 2.6em;
+}

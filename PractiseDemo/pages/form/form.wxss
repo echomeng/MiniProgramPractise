@@ -1,1 +1,11 @@
 /* pages/form/form.wxss */
+@import "../components/common-ui.wxss";
+
+form {
+  width: 100%
+}
+label {
+  display: inline-block; /* 指定元素的呈现框的类型 */
+  min-width: 270rpx;
+  margin-right: 20rpx;
+}
