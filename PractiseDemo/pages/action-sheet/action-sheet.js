@@ -22,7 +22,7 @@ Page({
         id: 'form',
         name: '表单组件',
         open: false,
-        pages: ['views', 'scroll-view', 'swiper']
+        pages: ['checkbox', 'form', 'input', 'picker', 'picker-view']
       },
       {
         id: 'nav',

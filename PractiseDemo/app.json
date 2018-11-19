@@ -6,7 +6,12 @@
     "pages/scroll-view/scroll-view",
     "pages/views/views",
     "pages/movable-view/movable-view",
-    "pages/cover-view/cover-view"
+    "pages/cover-view/cover-view",
+    "pages/checkbox/checkbox",
+    "pages/form/form",
+    "pages/input/input",
+    "pages/picker/picker",
+    "pages/picker-view/picker-view"
   ],
   "window": {
     "backgroundTextStyle": "light",
