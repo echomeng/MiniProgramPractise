@@ -4,7 +4,9 @@
     "pages/action-sheet/action-sheet",
     "pages/swiper/swiper",
     "pages/scroll-view/scroll-view",
-    "pages/views/views"
+    "pages/views/views",
+    "pages/movable-view/movable-view",
+    "pages/cover-view/cover-view"
   ],
   "window": {
     "backgroundTextStyle": "light",

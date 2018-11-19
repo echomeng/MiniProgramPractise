@@ -1,0 +1,29 @@
+/* pages/movable-view/movable-view.wxss */
+movable-view {
+  display: flex; /* display属性规定元素应该生成的框的类型 */
+  align-items: center; /* 定义flex子项在flex容器的当前行的侧轴（纵轴）方向上的对齐方式 */
+  justify-content: center; /* 用于设置或者检索弹性盒子元素在主轴（横轴）方向上的对齐方式 */
+  height: 100rpx;
+  width: 100rpx;
+  background-color: #FFE4E1;
+}
+movable-area {
+  height: 400rpx;
+  width: 400rpx;
+  margin: 50rpx 0 0 50rpx;
+  background-color: #CD5C5C;
+  overflow: hidden; /* overflow属性指定内容溢出元素的范围会发生什么 */
+}
+.page-section-title {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  margin-bottom: 20rpx;
+  margin-top: 50rpx;
+}
+.btn-area {
+  margin-top: 20rpx;
+}
+.max {
+  height: 600rpx;
+  width: 600rpx;
+}
